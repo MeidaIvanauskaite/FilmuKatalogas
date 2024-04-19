@@ -1,0 +1,383 @@
+* {
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+a:hover, .input_addfilm:hover, button:hover, select:hover{
+	opacity: .7;
+	transition: 0.10s;
+}
+
+.select_sort_films, .select_filter_films, .input_search_films {
+	font-size: 17px;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+.input_search_films {
+	border: 1px solid black;
+	width: 400px;
+}
+
+h1 {
+	color: white;
+	position: fixed;
+	right: 160px;
+	font-size: 40px;
+	margin-top: 14px;
+	text-shadow: #000000 1px 0 15px;
+}
+
+.a_edit, .a_delete {
+	color: white;
+	text-decoration: none;
+	padding: 8px 0;
+}
+
+.form_sort_films, .form_filter_films {
+	position:absolute;
+}
+
+.form_sort_films {
+	margin-left: 400px;
+}
+
+.form_filter_films {
+	margin-left: 800px;
+}
+
+.button_sort_films, .button_filter_films, .button_search_films {
+	font-size: 17px;
+	border-radius: 10px;
+	background-color: #e9f4a7;
+	border: 1px solid black;
+	padding: 2px 6px;
+}
+
+.button_edit {
+	position: absolute; 
+	right: 25px; 
+	margin: 5px 0 10px 0;
+	background-color: rgb(98, 98, 239);
+	border: none;
+	border-radius: 15px;
+	font-size: 18px;
+	padding: 10px
+}
+
+.button_delete {
+	position: absolute; 
+	right: 25px; 
+	margin: 55px 0 0 0;
+	background-color: rgb(231, 68, 68);
+	border: none;
+	border-radius: 15px;
+	font-size: 18px;
+	padding: 10px
+}
+
+.input1 {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+.input_title {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 5px auto;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.input_nr {
+	border: 2px solid #ccc;
+	width: 5%;
+	height: 42px;
+	padding: 10px;
+	margin: 5px 25px 25px 180px;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+.add_filmtype, .edit_filmtype {
+	border: 2px solid #ccc;
+	width: 8%;
+	height: 42px;
+	padding: 10px;
+	margin: 5px 250px 0 0;
+	border-radius: 5px;
+	position: absolute;
+	font-size: 15px;
+}
+
+.add_submit {
+	margin: 20px 0 15px 665px;
+	background: #cf7d1f;
+	padding: 8px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+}
+
+.edit_submit {
+	margin: 20px 0 0 0;
+	background: #cf7d1f;
+	padding: 8px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+}
+
+.add_cancel {
+	margin: 20px 0 15px 575px;
+	background: rgb(231, 68, 68);
+	padding: 8px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+}
+
+.edit_cancel {
+	margin: 0 0 15px 1310px;
+	background: rgb(231, 68, 68);
+	padding: 8px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+}
+
+.film_image {
+	width: 160px;
+	height: 210px;
+	position: absolute;
+	border-radius: 10px;
+	left: 25px;
+	top: 18px
+}
+
+.input_image {
+	margin: 10px 0 10px 90px;
+	font-size: 20px;
+}
+
+label {
+	color: #565656;
+	font-size: 18px;
+	padding: 10px;
+}
+
+#login_title {
+	margin-left: 75px
+}
+
+#register_title {
+	margin-left: 82px
+}
+
+.help_title {
+	margin-left: 120px;
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+.body_main {
+	background: #1690A7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	flex-direction: column;
+}
+
+.body_catalog {
+	background: #1690A7;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.index_main {
+	width: 100%;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.index_main2 {
+	width: 600px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.catalog_main {
+	width: 1500px;
+	border: 2px solid #ccc;
+	padding: 5px 5px 25px 5px;
+	background: #fff;
+	border-radius: 15px;
+	text-align: center;
+	margin-top: 90px;
+	position: absolute;
+}
+
+.add_film, .edit_film {
+	width: 1450px;
+	border: 2px solid #e3f1db;
+	padding: 5px;
+	background: #e3f1db;
+	border-radius: 15px;
+	text-align: center;
+	margin: 5px 0 35px 20px;
+}
+
+.film_from_db {
+	width: 1450px;
+	border: 2px solid #dbe8f1;
+	padding: 20px 5px;
+	background: #dbe8f1;
+	border-radius: 15px;
+	text-align: center;
+	margin: 5px 0 5px 20px;
+	font-size: 20px;
+	height: 250px;
+	position: relative
+}
+
+.index_title {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 15px
+}
+
+.catalog_title {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.button1 {
+	background: #cf7d1f;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 15px;
+	border: none;
+	font-size: 25px;
+}
+
+.button_help {
+	position: fixed;
+	background: #3cbdf5;
+	padding: 15px 25px;
+	color: white;
+	border: none;
+	border-radius: 60px;
+	font-size: 25px;
+	font-weight: bold;
+	right: 25px;
+	top: 25px
+}
+
+.button_help2 {
+	position: fixed;
+	background: #3cbdf5;
+	padding: 15px 25px;
+	color: white;
+	border: none;
+	border-radius: 60px;
+	font-size: 25px;
+	font-weight: bold;
+	left: 25px;
+	top: 20px
+}
+
+.button_register, .button_login {
+	margin: 10px
+}
+
+.a_back {
+	float: right;
+	background: #6b6a6a;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 15px;
+	border: none;
+	text-decoration: none;
+	margin: 4px 20px 0 0;
+}
+
+.a_back_help {
+	float: right;
+	background: #6b6a6a;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 15px;
+	border: none;
+	text-decoration: none;
+	margin: 32px 32px 0 0;
+	font-size: 20px
+}
+
+.a_logout {
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	text-decoration: none;
+	position: fixed;
+	right: 10px;
+	margin: 21px 25px 0 0;
+}
+
+.input_addfilm {
+	background: #0c9832; 
+	font-size: 50px; 
+	color: #fff; 
+	border-radius: 60px; 
+	border: none; 
+	text-decoration: none; 
+	position: fixed; 
+	right: 10px; 
+	bottom: 10px; 
+	margin: 0 25px 25px 0;
+	width: 60px;
+	height: 60px;
+	padding: 0px;
+}
+
+.error {
+	background: #F2DEDE;
+	color: #A94442;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
+
+ .success {
+	background: #D4EDDA;
+	color: #40754C;
+	padding: 10px;
+	width: 95%;
+	border-radius: 5px;
+	margin: 20px auto;
+ }
